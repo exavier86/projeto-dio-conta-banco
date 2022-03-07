@@ -13,6 +13,11 @@ public class Main {
 		cc.depositar(100);
 		cc.transferir(100, poupanca);
 		
+		cc.sacar(50);
+		cc.depositar(200);
+		
+		
+		
 		cc.imprimirExtrato();
 		poupanca.imprimirExtrato();
 
