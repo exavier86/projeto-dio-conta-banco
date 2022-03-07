@@ -14,7 +14,7 @@ public class ContaCorrente extends Conta {
 	@Override
 	public void depositar(double valor) {
 		if(saldo < 0) {
-			saldo = (saldo * 0.5) + valor ; // 0.5% taxa de juros devido saldo negativo.
+			saldo = saldo * 0.05 + saldo + valor ; // 0.09% taxa de juros devido saldo negativo.
 		}
 		else {
 			saldo += valor;
